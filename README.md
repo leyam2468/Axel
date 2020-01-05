@@ -5,7 +5,7 @@
 <dt>CSS/CSS3</dt>
 <dt>JScript/Jquery</dt>
 <dt>PHP7</dt>
-M<dt>ySQL</dt>
+<dt>MySQL</dt>
 </dl>
 ![alt text][logo]
 
