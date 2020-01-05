@@ -1,12 +1,12 @@
 # Axel
 ## Axel For Design
-
-HTML/HTML5
-CSS/CSS3
-JScript/Jquery
-PHP7
-MySQL
-: 
+<dl>
+<dt>HTML/HTML5</dt>
+<dt>CSS/CSS3</dt>
+<dt>JScript/Jquery</dt>
+<dt>PHP7</dt>
+M<dt>ySQL</dt>
+</dl>
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
