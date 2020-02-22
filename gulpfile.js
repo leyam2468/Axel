@@ -28,7 +28,7 @@ gulp.task('css',function(){
 gulp.task('js',function(){
     return gulp.src('input/*.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('output'))
+        .pipe(gulp.dest('output/js'))
 });
 
 // watch task 
@@ -37,3 +37,5 @@ gulp.task('watch',function(){
     gulp.watch('input/style/**/**.scss',gulp.series('css'));
     gulp.watch('input/js/**/**.js',gulp.series('js'));
 });
+// Default Task 
+gulp.task('default', gulp.parallel('watch'));
