@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var prefix = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
+var sourcemap = require('gulp-sourcemaps');
 
 
 // html task
@@ -15,9 +16,11 @@ gulp.task('html',function(){
 // css Tast
 gulp.task('css',function(){
     return gulp.src('input/style/*.scss')
+        .pipe(sourcemap.init())
         .pipe(sass())
         .pipe(prefix())
         .pipe(concat('main.css'))
+        .pipe(sourcemap.write('.'))
         .pipe(gulp.dest('output/style'))
 });
 
@@ -32,4 +35,5 @@ gulp.task('js',function(){
 gulp.task('watch',function(){
     gulp.watch('input/pug/**/*.pug',gulp.series('html'));
     gulp.watch('input/style/**/**.scss',gulp.series('css'));
+    gulp.watch('input/js/**/**.js',gulp.series('js'));
 });
