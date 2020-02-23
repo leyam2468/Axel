@@ -1,13 +1,25 @@
+include help/var
 <!DOCTYPE html>
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="Axel For Design")
         title Axel
-        include help/links.pug
+        include help/links
     body
-        .test Axel For Deign
-        .test Come
-        .test hhhh
-        .test Test
+        p :I Love 
+            span #{sitename}
         
+        //-for
+        ul
+            -for (var x=1 ;x <= 5 ; x++) 
+                li #{x}
+        //-each
+        each z,y in [2,3,4,5,6,]
+            div= z +':'+ y
+            
+        each z,y in myskils
+            div= z +' : '+ y
+        else
+            h1 there is no val

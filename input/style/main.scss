@@ -1,8 +1,14 @@
 @import "scss/header";
 @import "scss/fotter";
-.test {
+
+body {
+    background-color: black;
+    font-family:'Open Sans';
+    color: wheat;
     font-size: 40px;
-    color: red;
     font-weight: bold;
     text-align: center;
+}
+span {
+    color: red;
 }

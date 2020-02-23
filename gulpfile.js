@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var prefix = require('gulp-autoprefixer');
-var sass = require('gulp-sass');
-var pug = require('gulp-pug');
-var sourcemap = require('gulp-sourcemaps');
+var gulp = require('gulp');//for start gulp
+var concat = require('gulp-concat');///for make file more compres
+var prefix = require('gulp-autoprefixer');//for make outo brefixer css
+var sass = require('gulp-sass');//for comppuuler scss
+var pug = require('gulp-pug');//for compiler pug 
+var sourcemap = require('gulp-sourcemaps');//make map for file css
 
 
 // html task
