@@ -19,9 +19,9 @@ gulp.task('css',function(){
         .pipe(sourcemap.init())
         .pipe(sass())
         .pipe(prefix())
-        .pipe(concat('main.css'))
+        //.pipe(concat('main.css'))
         .pipe(sourcemap.write('.'))
-        .pipe(gulp.dest('output/style'))
+        .pipe(gulp.dest('output/style/'))
 });
 
 // js Tast
