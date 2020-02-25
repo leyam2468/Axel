@@ -13,7 +13,7 @@ body {
   grid-gap: 0 40px; }
 
 .box-cont {
-  padding: 50px 0; }
+  padding: 30px 0; }
   .box-cont .box {
     position: relative;
     height: 400px;
@@ -122,7 +122,7 @@ body {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-template-rows: auto;
   grid-gap: 0 40px; }
   .swiper-cont .swiper {
@@ -142,6 +142,37 @@ body {
         margin-bottom: 20px; }
         .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide {
           background-position: center;
-          background-size: cover; }
+          background-size: cover;
+          color: white;
+          text-align: center; }
+          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 30px 0; }
+          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide span {
+            font-size: 1.5em;
+            color: red;
+            width: 50px;
+            height: 30px;
+            background-color: rgba(255, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 10px;
+            color: white; }
+          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide p {
+            font-size: 1.5em; }
+
+.swiper-cont-2 .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.swiper-cont-2 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.swiper-cont-2 .swiper-pagination-bullet {
+  background: #fff; }
 
 /*# sourceMappingURL=effects.css.map */
