@@ -26,7 +26,7 @@ gulp.task('css',function(){
 
 // js Tast
 gulp.task('js',function(){
-    return gulp.src('input/*.js')
+    return gulp.src('input/js/*.js')
         .pipe(concat('main.js'))
         .pipe(gulp.dest('output/js'))
 });
