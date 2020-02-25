@@ -7,18 +7,26 @@ html(lang="en")
         meta(name="description", content="Axel For Design")
         title Axel
         include help/links
+        link(rel="stylesheet", href="style/main.css")
     body
-        p :I Love #[span #{sitename}]
-            span #{sitename}
-        //-for
-        ul
-            -for (var x=1 ;x <= 5 ; x++) 
-                li #{x}
-        //-each
-        each z,y in [2,3,4,5,6,]
-            div= z +':'+ y
-            
-        each z,y in myskils
-            div= z +' : '+ y
-        else
-            h1 there is no val
+        //-Navbar
+        include help/header
+        //-Banner
+        .banner 
+            .swiper-container
+                .swiper-wrapper
+                    div(class="swiper-slide" style="background-image:url(img/banner1.jpg);")
+                        h2 Axel For Design 
+                        h4 Wep & Graphic Design
+                    div(class="swiper-slide" style="background-image:url(img/banner2.jpg);")
+                    div(class="swiper-slide" style="background-image:url(img/banner3.jpg);")
+                    div(class="swiper-slide" style="background-image:url(img/banner4.jpg);")
+                .swiper-pagination
+                .swiper-button-next
+                .swiper-button-prev
+
+
+
+        //-Scripts-------------
+        include help/script
+        

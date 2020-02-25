@@ -4,14 +4,15 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Effects
+        include help/links.pug
         
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap")
         link(rel="stylesheet", href="style/effects.css")
-        link(rel="stylesheet", href="style/swiper.min.css")
     body
+        //-Nav-bar
+        include help/header
         //-box-effect
         .box-cont
-            .container
+            .containerr
                 .box
                     .content
                         h2 01
@@ -66,18 +67,16 @@ html(lang="en")
         .swiper-cont-2
             .swiper-container
                 .swiper-wrapper
-                    div(class="swiper-slide" style="background-image:url(img/1.png)")
                     div(class="swiper-slide" style="background-image:url(img/2.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/3.png)")
-                    div(class="swiper-slide" style="background-image:url(img/4.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/5.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/1.png)")
                     div(class="swiper-slide" style="background-image:url(img/2.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/3.png)")
-                    div(class="swiper-slide" style="background-image:url(img/4.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/5.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
                 .swiper-pagination
 
         //--------Script-------------
-        script(src="js/swiper.min.js")
-        script(src="js/main.js")
+        include help/script
+        

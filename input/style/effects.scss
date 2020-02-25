@@ -3,12 +3,13 @@ body {
     font-family:'Open Sans';
     margin: 0;
 }
-.container {
+@import "scss/header";
+.containerr {
     position: relative;
     width: 90%;
     margin:0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px ,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20%,1fr));
     grid-template-rows: auto;
     grid-gap: 0 40px;
 }

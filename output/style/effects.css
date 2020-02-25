@@ -3,12 +3,23 @@ body {
   font-family: 'Open Sans';
   margin: 0; }
 
-.container {
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+  .bg-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9); }
+    .bg-dark .navbar-nav .nav-link.active {
+      color: rgba(255, 0, 0, 0.9); }
+  .bg-dark .navbar-brand {
+    font-weight: bold; }
+    .bg-dark .navbar-brand span {
+      color: red; }
+
+.containerr {
   position: relative;
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   grid-template-rows: auto;
   grid-gap: 0 40px; }
 
