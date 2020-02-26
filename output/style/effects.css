@@ -14,18 +14,9 @@ body {
     .bg-dark .navbar-brand span {
       color: red; }
 
-.containerr {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  grid-template-rows: auto;
-  grid-gap: 0 40px; }
-
 .box-cont {
-  padding: 60px 0; }
-  .box-cont .box {
+  padding: 100px 0 60px; }
+  .box-cont .container .row .box {
     position: relative;
     height: 400px;
     margin-top: 50px;
@@ -33,13 +24,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .box-cont .box:hover .content h2 {
+    .box-cont .container .row .box:hover .content h2 {
       top: -140px; }
-    .box-cont .box:hover .content a {
+    .box-cont .container .row .box:hover .content a {
       transform: translateY(0);
       opacity: 1;
       visibility: visible; }
-    .box-cont .box::before {
+    .box-cont .container .row .box::before {
       content: "";
       position: absolute;
       top: -2px;
@@ -49,7 +40,7 @@ body {
       background: #fff;
       transform: skew(2deg, 2deg);
       z-index: -1; }
-    .box-cont .box::after {
+    .box-cont .container .row .box::after {
       content: '';
       position: absolute;
       top: 0;
@@ -58,39 +49,11 @@ body {
       height: 100%;
       background: rgba(255, 255, 255, 0.05);
       pointer-events: none; }
-    .box-cont .box:nth-child(1)::before {
-      transform: skew(1deg, 2deg);
-      background: linear-gradient(315deg, #ff0057, #e64a19);
-      top: -5px;
-      left: -7px;
-      right: 7px;
-      bottom: 7px; }
-    .box-cont .box:nth-child(4)::before {
-      transform: skew(-1deg, -2deg);
-      background: linear-gradient(315deg, #89ff00, #00bcd4);
-      top: -5px;
-      left: 7px;
-      right: -7px;
-      bottom: 7px; }
-    .box-cont .box:nth-child(3)::before {
-      transform: skew(-2deg, -2deg);
-      background: linear-gradient(315deg, #e91e63, #5d02ff);
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px; }
-    .box-cont .box:nth-child(2)::before {
-      transform: skew(2deg, 2deg);
-      background: linear-gradient(315deg, #ff0000, #ffc107);
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px; }
-    .box-cont .box .content {
+    .box-cont .container .row .box .content {
       position: relative;
       padding: 20px;
       transform: translateY(40px); }
-      .box-cont .box .content h2 {
+      .box-cont .container .row .box .content h2 {
         position: absolute;
         top: -60px;
         right: 20px;
@@ -99,19 +62,19 @@ body {
         font-size: 10em;
         color: rgba(255, 255, 255, 0.05);
         transition: 0.5s; }
-      .box-cont .box .content h3 {
+      .box-cont .container .row .box .content h3 {
         margin: 0 0 10px;
         padding: 0;
         font-size: 1.5em;
         font-weight: bold;
         color: #fff; }
-      .box-cont .box .content p {
+      .box-cont .container .row .box .content p {
         margin: 0;
         padding: 0;
         color: #fff;
         font-size: 18px;
         font-weight: 400; }
-      .box-cont .box .content a {
+      .box-cont .container .row .box .content a {
         position: relative;
         margin: 20px 0 0;
         padding: 10px 20px;
@@ -123,25 +86,47 @@ body {
         transform: translateY(-40px);
         opacity: 0;
         visibility: hidden; }
-        .box-cont .box .content a:hover {
+        .box-cont .container .row .box .content a:hover {
           background-color: #fff;
           color: #000; }
+  .box-cont .container .row .one::before {
+    transform: skew(1deg, 2deg);
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+    top: -5px;
+    left: -7px;
+    right: 7px;
+    bottom: 7px; }
+  .box-cont .container .row .tow::before {
+    transform: skew(2deg, 2deg);
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px; }
+  .box-cont .container .row .three::before {
+    transform: skew(-2deg, -2deg);
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px; }
+  .box-cont .container .row .four::before {
+    transform: skew(-1deg, -2deg);
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+    top: -5px;
+    left: 7px;
+    right: -7px;
+    bottom: 7px; }
 
-.swiper-cont {
+.swiper-cont-2 {
   background-color: #fff;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  grid-template-rows: auto;
-  grid-gap: 0 40px; }
-  .swiper-cont .swiper {
+  position: relative; }
+  .swiper-cont-2 .swiper {
     width: 100%;
     height: 400px;
     display: block;
     position: relative; }
-    .swiper-cont .swiper .swiper-container {
+    .swiper-cont-2 .swiper .swiper-container {
       width: 300px;
       height: 300px;
       position: absolute;
@@ -149,18 +134,18 @@ body {
       top: 50%;
       margin-left: -150px;
       margin-top: -150px; }
-      .swiper-cont .swiper .swiper-container .swiper-wrapper {
+      .swiper-cont-2 .swiper .swiper-container .swiper-wrapper {
         margin-bottom: 20px; }
-        .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide {
+        .swiper-cont-2 .swiper .swiper-container .swiper-wrapper .swiper-slide {
           background-position: center;
           background-size: cover;
           color: white;
           text-align: center; }
-          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide h2 {
+          .swiper-cont-2 .swiper .swiper-container .swiper-wrapper .swiper-slide h2 {
             font-size: 2.5em;
             font-weight: bold;
             margin: 30px 0; }
-          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide span {
+          .swiper-cont-2 .swiper .swiper-container .swiper-wrapper .swiper-slide span {
             font-size: 1.5em;
             color: red;
             width: 50px;
@@ -169,21 +154,21 @@ body {
             border-radius: 20px;
             padding: 10px;
             color: white; }
-          .swiper-cont .swiper .swiper-container .swiper-wrapper .swiper-slide p {
+          .swiper-cont-2 .swiper .swiper-container .swiper-wrapper .swiper-slide p {
             font-size: 1.5em; }
 
-.swiper-cont-2 .swiper-container {
+.swiper-cont-3 .swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.swiper-cont-2 .swiper-slide {
+.swiper-cont-3 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px; }
 
-.swiper-cont-2 .swiper-pagination-bullet {
+.swiper-cont-3 .swiper-pagination-bullet {
   background: #fff; }
 
 /*# sourceMappingURL=effects.css.map */

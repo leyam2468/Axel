@@ -5,74 +5,93 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Effects
         include help/links.pug
-        
         link(rel="stylesheet", href="style/effects.css")
     body
+
+
         //-Nav-bar
         include help/header
+
+
         //-box-effect
         .box-cont
-            .containerr
-                .box
-                    .content
-                        h2 01
-                        h3 Service One
-                        p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
-                        a(href="") Read More
-                .box
-                    .content
-                        h2 02
-                        h3 Service Tow
-                        p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
-                        a(href="") Read More
-                .box
-                    .content
-                        h2 03
-                        h3 Service Three
-                        p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
-                        a(href="") Read More
-                .box
-                    .content
-                        h2 04
-                        h3 Service Four
-                        p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
-                        a(href="") Read More
-        //-swiper
-        .swiper-cont
-            .swiper
-                .swiper-container.swiper2
-                    .swiper-wrapper
-                        div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
-                                h2 Axel
-                                span Wep Design
-                                p Swipe This Box For More Pic
-                        div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
-            .swiper
-                .swiper-container.swiper2
-                    .swiper-wrapper
-                        div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
-            .swiper
-                .swiper-container.swiper2
-                    .swiper-wrapper
-                        div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
-                        div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
-        //--swiper-2
+            .container
+                .row
+                    .col
+                        .box.one
+                            .content
+                                h2 01
+                                h3 Service One
+                                p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
+                                a(href="") Read More
+                    .col
+                        .box.tow
+                            .content
+                                h2 02
+                                h3 Service Tow
+                                p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
+                                a(href="") Read More
+                    .col
+                        .box.three
+                            .content
+                                h2 03
+                                h3 Service Three
+                                p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
+                                a(href="") Read More
+                    .col
+                        .box.four
+                            .content
+                                h2 04
+                                h3 Service Four
+                                p Lorem, Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci velit.
+                                a(href="") Read More
+        
+        
+        //-swiper 2
         .swiper-cont-2
-            .swiper-container.swiper3
-                .swiper-wrapper
-                    div(class="swiper-slide" style="background-image:url(img/1.png)")
-                    div(class="swiper-slide" style="background-image:url(img/2.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/3.png)")
-                    div(class="swiper-slide" style="background-image:url(img/4.jpg)")
-                    div(class="swiper-slide" style="background-image:url(img/5.jpg)")
-                .swiper-pagination
+                .row
+                    .col-sm-12.col-md-6.col-lg-4
+                        .swiper
+                            .swiper-container.swiper2
+                                .swiper-wrapper
+                                    div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
+                                            h2 Axel
+                                            span Wep Design
+                                            p Swipe This Box For More Pic
+                                    div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
+                    .col-sm-12.col-md-6.col-lg-4
+                        .swiper
+                            .swiper-container.swiper2
+                                .swiper-wrapper
+                                    div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
+                    .col-sm-12.col-md-6.col-lg-4
+                        .swiper
+                            .swiper-container.swiper2
+                                .swiper-wrapper
+                                    div(class="swiper-slide" style="background-image:url(img/3.png);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/5.jpg);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/4.jpg);background-size:cover")
+                                    div(class="swiper-slide" style="background-image:url(img/2.jpg);background-size:cover")
+        
+        
+        //--swiper-3
+        .swiper-cont-3
+            .row
+                .col
+                    .swiper-container.swiper3
+                        .swiper-wrapper
+                            div(class="swiper-slide" style="background-image:url(img/1.png)")
+                            div(class="swiper-slide" style="background-image:url(img/2.jpg)")
+                            div(class="swiper-slide" style="background-image:url(img/3.png)")
+                            div(class="swiper-slide" style="background-image:url(img/4.jpg)")
+                            div(class="swiper-slide" style="background-image:url(img/5.jpg)")
+                        .swiper-pagination
+
 
         //--------Script-------------
         include help/script
