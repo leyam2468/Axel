@@ -24,7 +24,7 @@ body {
   grid-gap: 0 40px; }
 
 .box-cont {
-  padding: 30px 0; }
+  padding: 60px 0; }
   .box-cont .box {
     position: relative;
     height: 400px;
@@ -65,7 +65,7 @@ body {
       left: -7px;
       right: 7px;
       bottom: 7px; }
-    .box-cont .box:nth-child(2)::before {
+    .box-cont .box:nth-child(4)::before {
       transform: skew(-1deg, -2deg);
       background: linear-gradient(315deg, #89ff00, #00bcd4);
       top: -5px;
@@ -79,7 +79,7 @@ body {
       left: -2px;
       right: -2px;
       bottom: -2px; }
-    .box-cont .box:nth-child(4)::before {
+    .box-cont .box:nth-child(2)::before {
       transform: skew(2deg, 2deg);
       background: linear-gradient(315deg, #ff0000, #ffc107);
       top: -2px;
@@ -130,7 +130,7 @@ body {
 .swiper-cont {
   background-color: #fff;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));

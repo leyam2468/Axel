@@ -1,5 +1,24 @@
-/*
-var swiper1 = new Swiper('.swiper-cont .swiper-container', {
+
+ //--banner
+var swiper = new Swiper('.swiper1', {
+  speed: 600,
+  parallax: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
+
+
+//-badge Effects "cube"
+var swiper1 = new Swiper('.swiper2', {
     effect: 'cube',
     grabCursor: true,
     cubeEffect: {
@@ -9,8 +28,10 @@ var swiper1 = new Swiper('.swiper-cont .swiper-container', {
       shadowScale: 0.94,
     },
   });
-  
-  var swiper2 = new Swiper('.swiper-cont-2 .swiper-container', {
+
+
+//-badge Effects "coverflow"
+  var swiper2 = new Swiper('.swiper3', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -21,22 +42,8 @@ var swiper1 = new Swiper('.swiper-cont .swiper-container', {
       depth: 100,
       modifier: 1,
       slideShadows : true,
-    },Slider
-    pagination: {
+    },
+    Sliderpagination: {
       el: '.swiper-pagination',
     },
 });
-*/
-    //--banner
-    var swiper = new Swiper('.swiper-container', {
-      speed: 600,
-      parallax: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
