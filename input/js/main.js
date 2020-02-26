@@ -28,16 +28,15 @@ var swiper1 = new Swiper('.swiper-cont .swiper-container', {
 });
 */
     //--banner
-var swiper3 = new Swiper('.banner .swiper-container', {
-    autoplay: {
-        delay: 3000,},
-        loop: true,
-    pagination: {
+    var swiper = new Swiper('.swiper-container', {
+      speed: 600,
+      parallax: true,
+      pagination: {
         el: '.swiper-pagination',
-        type: 'progressbar',
-    },
-    navigation: {
-        nextEl: '.banner .swiper-button-next',
-        prevEl: '.banner .swiper-button-prev',
-    },
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });

@@ -14,16 +14,25 @@ html(lang="en")
         //-Banner
         .banner 
             .swiper-container
+                div(class="parallax-bg" style="background-image:url(img/04.jpg)" data-swiper-parallax="-23%")
                 .swiper-wrapper
-                    div(class="swiper-slide" style="background-image:url(img/banner1.jpg);")
-                        h2 Axel For Design 
-                        h4 Wep & Graphic Design
-                    div(class="swiper-slide" style="background-image:url(img/banner2.jpg);")
-                    div(class="swiper-slide" style="background-image:url(img/banner3.jpg);")
-                    div(class="swiper-slide" style="background-image:url(img/banner4.jpg);")
-                .swiper-pagination
-                .swiper-button-next
-                .swiper-button-prev
+                    div(class="swiper-slide")
+                        div(class="title" data-swiper-parallax="-300") Axel For Design
+                        div(class="subtitle" data-swiper-parallax="-200") Wep & Graphic Design 
+                        div(class="text" data-swiper-parallax="-100")
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    div(class="swiper-slide")
+                        div(class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0") All You Need
+                        div(class="subtitle" data-swiper-parallax="-200") Just Call me 
+                        div(class="text" data-swiper-parallax="-100")
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    div(class="swiper-slide")
+                        div(class="title" data-swiper-parallax="-300") Take Alook In my Page
+                        div(class="subtitle" data-swiper-parallax="-200") I Hope You Like it
+                        div(class="text" data-swiper-parallax="-100")
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                .swiper-button-next.swiper-button-white
+                .swiper-button-prev.swiper-button-white
 
 
 
