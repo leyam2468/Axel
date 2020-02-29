@@ -46,7 +46,7 @@ var swiper1 = new Swiper('.swiper2', {
 
 //-badge Effects "coverflow"
   var swiper2 = new Swiper('.swiper3', {
-    speed:1000,
+    speed:500,
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -63,6 +63,6 @@ var swiper1 = new Swiper('.swiper2', {
       el: '.swiper-pagination',
     },
     autoplay: {
-      delay: 3000,
+      delay: 1000,
     },
 });

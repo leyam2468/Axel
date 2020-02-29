@@ -25,6 +25,47 @@ body {
             background-size: cover;
             background-position: center;
         }
+        .banner-cont {
+            position: absolute;
+            z-index: 2;
+            top: 40%;
+            left: 25%;
+            h2 {
+                font-size: 4em;
+                margin-bottom: 3px;
+                font-weight: bold;
+                animation: text-flicker-out-glow 2.5s linear infinite both;
+            }
+            span {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 80%;
+                background-color: red;
+            }
+            h3 {
+                letter-spacing: 5px;
+                margin-top: 5px;
+                font-size: 2em;
+            }
+        }
+        .seemore {
+            position: absolute;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.5em;
+            font-weight: bold;
+            bottom: 40px;
+            left: 45%;
+            z-index: 2;
+            cursor: pointer;
+            animation: bounce-top 2s ease-in-out infinite both;
+            i {
+                position: absolute;
+                bottom: -20px;
+                left: 50%;;
+            }
+        }
         .swiper-wrapper {
             
             .swiper-slide {
@@ -32,32 +73,6 @@ body {
                 color:#fff;
                 box-sizing: border-box;
                 padding: 30vh 20vw ;
-                .title {
-                    font-size: 4em;
-                    font-weight: bold;
-                    color: red;
-                    &::before {
-                        content: '';
-                        bottom: 0;
-                        left: 0;
-                        background-color: red;
-                        width: 50%;
-                        height: 3px;
-                        position: absolute;
-                        margin-top: 20px;
-                    }
-                }
-                .subtitle {
-                    font-size: 2em;
-                    font-weight: 400;
-                    margin: 10px 0;
-                }
-                .text {
-                    font-size: 1em;
-                    line-height: 1.3;
-                    
-                    
-                }
             }
         }
     }
@@ -65,3 +80,4 @@ body {
 
 
 @import "scss/fotter";
+@import "scss/animation"
