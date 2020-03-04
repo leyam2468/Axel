@@ -1,10 +1,17 @@
+@import "scss/var";
 .bg-dark {
     background-color: rgba(0, 0, 0, 0.5) !important;
     .navbar-nav{
         .nav-link {
             color:rgba(255, 255, 255, 0.9);
             &.active{
-                color: rgba(255, 0, 0, 0.9);
+                color: red;
+                &:hover {
+                    color: red;
+                }
+            }
+            &:hover {
+                color: $color-one;
             }
         }
         
