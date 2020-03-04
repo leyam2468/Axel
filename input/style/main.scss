@@ -99,13 +99,14 @@ body {
             letter-spacing: 8px;
             font-family:$font-one;
             position: relative;
+            margin-bottom: 20px;
             &::before {
                 text-align: center;
                 position: absolute;
                 content: '';
                 width: 40%;
                 height: 2px;
-                bottom: 0;
+                bottom: -5px;
                 background-color: $color-one;
             }
         }
@@ -118,7 +119,6 @@ body {
             font-family: $font-tow;
             font-size: 2em;
             font-weight: 500;
-            
         }
         a {
             display: inline-block;
@@ -133,18 +133,48 @@ body {
                 background:linear-gradient($color-one,black) ;
             }
             &.cv {
-                background:linear-gradient($color-one,black) ;
-                color: #000;
+                border:1px solid $color-tow ;
+                
                 &:hover {
                     color: white;
                 }
             }
         }
-    
     }
     .about-img {
         img {
             height: 400px;
+        }
+    }
+}
+//-programs lang 
+.programs-lang {
+    .icons {
+        i {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            &:hover {
+                border: .5px solid #eee;
+                box-shadow: 2px 0px 5px rgba(121, 121, 121, 0.637);
+                transform: scale(1.2);
+            }
+        }
+    }
+    .progres {
+        padding-top: 30px;
+        .progress {
+            height:25px;
+            margin-bottom: 10px;
+            background-color: $color-tow;
+            .progress-bar {
+                padding: 5px 5px;
+                background-color: $color-one;
+                text-align: left;
+                font-family: $font-tow;
+                font-size: 1.3em;
+            }
         }
     }
 }

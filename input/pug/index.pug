@@ -36,7 +36,7 @@ html(lang="en")
         div(class="about-me" id="about-me")
             .container
                 .row
-                    div(class="col-8 about-info text-center")
+                    div(class="col-md-8 col-12 about-info text-center")
                         h2 About Me
                         p.text-uppercase Im a full stack Wep Design im study Mangement Information System 'MIS' At Aboukir Hight instituse 
                         h3 Name: Mohamed Ahmed Mahmoud .
@@ -44,9 +44,51 @@ html(lang="en")
                         h3 From: Alexaindria
                         a(href="" class="cv") My CV
                         a(href="" class="more-info") More Info
-                    div(class="col-4 about-img")
+                    div(class="col-md-4 col-12 about-img")
                         img(src="img/me.png", alt="")
-
+        //-programs lang
+        div(class="programs-lang ")
+            .container
+                .row
+                    .col-md-6.icons
+                        .row
+                            .col-4
+                                i.fab.fa-html5.fa-5x
+                            .col-4
+                                i.fab.fa-css3.fa-5x
+                            .col-4
+                                i.fab.fa-js.fa-5x
+                            .col-4
+                                i.fab.fa-sass.fa-5x
+                            .col-4
+                                i.fab.fa-git.fa-5x
+                            .col-4
+                                i.fab.fa-gulp.fa-5x
+                            .col-4
+                                i.fab.fa-php.fa-5x
+                            .col-4
+                                i.fas.fa-database.fa-5x
+                            .col-4
+                                i.fab.fa-python.fa-5x
+                    .col-md-6.progres
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") HTML
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") CSS
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Js
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Sass
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Pug
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Gulp
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Php
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Sql
+                                .progress
+                                    div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Git
         //-Scripts-------------
         include help/script
         
