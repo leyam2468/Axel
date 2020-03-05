@@ -5,6 +5,11 @@ body {
     color: white;
     height: 5000px;
 }
+button:focus,
+button:active,
+button:hover{
+    outline: 0;
+}
 //--NavBar
 @import "scss/header";
 //-bannner
@@ -164,7 +169,7 @@ body {
         }
     }
     .progres {
-        padding-top: 30px;
+        padding-top:10px;
         .progress {
             height:25px;
             margin-bottom: 10px;
@@ -177,6 +182,39 @@ body {
                 font-family: $font-tow;
                 font-size: 1.3em;
             }
+        }
+    }
+}
+//-Progect Area
+.progect-area {
+    .progect-title{
+        h2 {
+            font-family: $font-one;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        span {
+            width: 50%;
+            height: 2px;
+            background-color: red;
+            display: inline-block;
+        }
+    }
+    .button-group {
+        button {
+            background: transparent;
+            border:none;
+            color: white;
+            font-family: $font-tow;
+            font-size: 1.8em;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+    }
+    .grid {
+        .title {
+            font-family:$font-tow;
+            font-size: 1.5em;
         }
     }
 }

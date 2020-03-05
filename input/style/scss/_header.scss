@@ -7,6 +7,8 @@
     .navbar-nav{
         .nav-link {
             color:rgba(255, 255, 255, 0.9);
+            font-family: $font-one;
+            font-weight: 100;
             &.active{
                 color: red;
                 &:hover {
@@ -16,13 +18,6 @@
             &:hover {
                 color: $color-one;
             }
-        }
-        
-    }
-    .navbar-brand {
-        font-weight: bold;
-        span {
-            color: red;
         }
     }
 }

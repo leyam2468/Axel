@@ -3,23 +3,26 @@ body {
   color: white;
   height: 5000px; }
 
+button:focus,
+button:active,
+button:hover {
+  outline: 0; }
+
 .navbar {
   padding: 0 1rem; }
 
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.5) !important; }
   .bg-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.9); }
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "lemon";
+    font-weight: 100; }
     .bg-dark .navbar-nav .nav-link.active {
       color: red; }
       .bg-dark .navbar-nav .nav-link.active:hover {
         color: red; }
     .bg-dark .navbar-nav .nav-link:hover {
       color: #900600; }
-  .bg-dark .navbar-brand {
-    font-weight: bold; }
-    .bg-dark .navbar-brand span {
-      color: red; }
 
 .banner .swiper-container {
   width: 100%;
@@ -144,7 +147,7 @@ body {
     text-shadow: 1px 1px red; }
 
 .programs-lang .progres {
-  padding-top: 30px; }
+  padding-top: 10px; }
   .programs-lang .progres .progress {
     height: 25px;
     margin-bottom: 10px;
@@ -156,6 +159,30 @@ body {
       text-align: left;
       font-family: "Dancing Script", cursive;
       font-size: 1.3em; }
+
+.progect-area .progect-title h2 {
+  font-family: "lemon";
+  font-weight: bold;
+  font-size: 3em; }
+
+.progect-area .progect-title span {
+  width: 50%;
+  height: 2px;
+  background-color: red;
+  display: inline-block; }
+
+.progect-area .button-group button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 10px 20px; }
+
+.progect-area .grid .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em; }
 
 .fotter {
   width: 100%;
