@@ -3,6 +3,9 @@ body {
   font-family: 'Open Sans';
   margin: 0; }
 
+.navbar {
+  padding: 0 1rem; }
+
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.5) !important; }
   .bg-dark .navbar-nav .nav-link {
