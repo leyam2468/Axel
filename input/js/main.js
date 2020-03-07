@@ -112,4 +112,26 @@ $(document).ready(function(){
     return false
   })
   $('.progect-area .button-group #btn1').trigger('click');
+
+
+  $('.progect-area .grid .our-progect .popup-link').magnificPopup({
+    type: 'image',
+    gallery:{enabled:true}
+  });
+
+
+  //-Client Area
+  $('.other-say .owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    dots:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      544:{
+        items:2
+      }
+    }
+  });
 });
