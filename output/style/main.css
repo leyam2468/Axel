@@ -117,8 +117,6 @@ button:hover {
   font-family: "Dancing Script", cursive;
   font-size: 2em;
   font-weight: 500; }
-  .about-me .about-info h3::first-letter {
-    text-shadow: 1px 1px rgba(255, 0, 0, 0.705); }
 
 .about-me .about-info a {
   display: inline-block;
@@ -130,7 +128,8 @@ button:hover {
   border-radius: 3px;
   font-family: "lemon"; }
   .about-me .about-info a:hover {
-    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.541)); }
+    background-color: white;
+    color: black; }
   .about-me .about-info a.cv {
     border: 1px solid rgba(255, 255, 255, 0.6); }
 
@@ -152,31 +151,34 @@ button:hover {
       text-shadow: 1px 1px 20px #ffffffa6; }
 
 .programs-lang .progres {
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-radius: 0 15px 15px 0; }
   .programs-lang .progres .progress {
     height: 25px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: transparent; }
     .programs-lang .progres .progress .progress-bar {
       text-shadow: 1px 1px black;
       padding: 5px 5px;
       background-color: #900600;
       text-align: left;
       font-family: "Dancing Script", cursive;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      border-radius: 0 15px 15px 0;
+      box-shadow: 4px 0px 5px red; }
 
-.progect-area .progect-title h2 {
+.portfolio-area .progect-title h2 {
   font-family: "lemon";
   font-weight: bold;
   font-size: 3em; }
 
-.progect-area .progect-title span {
+.portfolio-area .progect-title span {
   width: 50%;
   height: 2px;
   background-color: red;
   display: inline-block; }
 
-.progect-area .button-group button {
+.portfolio-area .button-group button {
   background: transparent;
   border: none;
   color: white;
@@ -185,52 +187,53 @@ button:hover {
   font-weight: bold;
   padding: 0 20px; }
 
-.progect-area .button-group .active {
+.portfolio-area .button-group .active {
   color: #900600; }
 
-.progect-area .grid .our-progect {
-  margin-bottom: 20px; }
-  .progect-area .grid .our-progect:hover {
+.portfolio-area .grid .our-progect {
+  margin-bottom: 25px; }
+  .portfolio-area .grid .our-progect:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 5px #c1c1c15e; }
-  .progect-area .grid .our-progect .img img {
+  .portfolio-area .grid .our-progect .img img {
     width: 100%;
     height: 300px;
     background-size: cover; }
-  .progect-area .grid .our-progect .title {
+  .portfolio-area .grid .our-progect .title {
     font-family: "Dancing Script", cursive;
     font-size: 1.5em; }
 
-.other-say .header h2 {
-  font-family: "lemon";
-  font-size: 2.5em; }
-
-.other-say .header span {
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  background-color: red; }
-
-.other-say .carousel .client {
-  background-color: #ffffff10;
-  box-shadow: 2px 2px 5px #fff;
-  margin: 40px 20px 10px; }
-  .other-say .carousel .client .client-img {
-    padding: 2rem; }
-  .other-say .carousel .client .about-client {
-    padding-top: 2rem; }
-    .other-say .carousel .client .about-client h4 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      font-family: "lemon"; }
-    .other-say .carousel .client .about-client p {
-      font-family: "Dancing Script", cursive;
-      font-size: 1.5rem; }
+.other-say {
+  background: linear-gradient(#000, #eee); }
+  .other-say .header h2 {
+    font-family: "lemon";
+    font-size: 2.5em; }
+  .other-say .header span {
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: red; }
+  .other-say .carousel .client {
+    background-color: #ffffff10;
+    box-shadow: 0px 1px 15px #ffffff69;
+    margin: 40px 20px 10px; }
+    .other-say .carousel .client .client-img {
+      padding: 2rem; }
+    .other-say .carousel .client .about-client {
+      padding-top: 2rem; }
+      .other-say .carousel .client .about-client h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "lemon"; }
+      .other-say .carousel .client .about-client p {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.5rem; }
 
 .contact {
-  background: linear-gradient(#000, #eee); }
+  background-color: #ededed;
+  color: black; }
   .contact .subscribe {
-    padding: 8em 0;
+    padding: 6em 0;
     margin: auto; }
     .contact .subscribe .title h4 {
       font-size: 3em;
@@ -239,18 +242,34 @@ button:hover {
     .contact .subscribe form .textbox input {
       width: 400px;
       padding: 1.5em 1em;
-      border: 1px solid #eee;
+      border: 1px solid rgba(0, 0, 0, 0.513);
       background: transparent;
       color: black;
       font-weight: bold;
       font-family: "lemon"; }
     .contact .subscribe form .btn-submit button {
       background: whitesmoke;
-      color: #000;
+      color: rgba(0, 0, 0, 0.747);
       padding: 1em 1.5em;
-      border-color: white;
+      border-color: rgba(0, 0, 0, 0.534);
       font-family: "lemon";
       font-size: 15px; }
+
+.footer {
+  padding: 10px 0;
+  background-color: #ededed; }
+  .footer .social i {
+    color: black;
+    margin: 10px 15px; }
+    .footer .social i:hover {
+      color: red; }
+  .footer .copyright p {
+    color: black;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 1.5em; }
+  .footer .copyright span {
+    color: #900600; }
 
 .fotter {
   width: 100%;

@@ -12,7 +12,7 @@ html(lang="en")
         //-Navbar
         include help/header
         //-Banner
-        .banner 
+        div(class="banner") 
             .swiper-container.swiper1
                 div(class="parallax-bg" style="background-image:url(img/10.jpg)" data-swiper-parallax="-23%")
                 .banner-cont
@@ -47,7 +47,7 @@ html(lang="en")
                         a(href="" class="cv") My CV
                         a(href="" class="more-info") More Info
                     div(class="col-md-2 col-12 d-none d-md-block about-img")
-                        img(src="img/me.png", alt="")
+                        img(src="img/me2.png", alt="")
         //-programs lang
         div(class="programs-lang ")
             .container
@@ -101,7 +101,7 @@ html(lang="en")
                                 .progress
                                     div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Git
         //-Progect Area
-        div(class="progect-area py-5 text-center")
+        div(class="portfolio-area py-5 text-center" id="portfolio")
             .container
                 .progect-title.p-3
                     h2.h1.text-uppercase My portfolio
@@ -195,7 +195,7 @@ html(lang="en")
                             h4 Axel4
                             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestias?
         //-contanct 
-        div(class="contact")
+        div(class="contact" id="contact")
             .container.subscribe
                 .row
                     .col-lg-12.title.text-center
@@ -208,10 +208,21 @@ html(lang="en")
                             .col
                                 .btn-submit
                                     button(type="submit" class="btn btn-success float-right") supscripe
-        
-        
-        
-        
+        //-footer
+        div(class="footer text-center")
+            .container
+                .row
+                    .col-12
+                        a(href="#", title="title")
+                            img(src="img/footer-logo.png", alt="" style="width:200px")
+                        .social
+                            a(href="") #[i.fab.fa-facebook-f.fa-2x]
+                            a(href="") #[i.fab.fa-instagram.fa-2x]
+                            a(href="") #[i.fab.fa-github.fa-2x]
+                            a(href="") #[i.fab.fa-codepen.fa-2x]
+                        .copyright
+                            p Copyright @2020 All rights reserved
+                            p This Template Made By #[span Mohamed Ahmed]
         //-Scripts-------------
         include help/script
         

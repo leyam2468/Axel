@@ -123,9 +123,7 @@ button:hover{
             font-family: $font-tow;
             font-size: 2em;
             font-weight: 500;
-            &::first-letter {
-                text-shadow: 1px 1px rgba(255, 0, 0, 0.705);
-            }
+
         }
         a {
             display: inline-block;
@@ -137,7 +135,8 @@ button:hover{
             border-radius: 3px;
             font-family: $font-one;
             &:hover {
-                background:linear-gradient(rgba(255, 0, 0, 0.3),rgba(0, 0, 0, 0.541)) ;
+                background-color: white;
+                color: black;
             }
             &.cv {
                 border:1px solid $color-tow ;
@@ -172,10 +171,11 @@ button:hover{
     }
     .progres {
         padding-top:10px;
+        border-radius: 0 15px 15px 0;
         .progress {
             height:25px;
             margin-bottom: 10px;
-            background-color: $color-tow;
+            background-color: transparent;
             .progress-bar {
                 text-shadow: 1px 1px black;
                 padding: 5px 5px;
@@ -183,12 +183,14 @@ button:hover{
                 text-align: left;
                 font-family: $font-tow;
                 font-size: 1.3em;
+                border-radius: 0 15px 15px 0;
+                box-shadow: 4px 0px 5px red
             }
         }
     }
 }
-//-Progect Area
-.progect-area {
+//-protfolio Area
+.portfolio-area {
     .progect-title{
         h2 {
             font-family: $font-one;
@@ -218,7 +220,7 @@ button:hover{
     }
     .grid {
         .our-progect {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             &:hover{
                 transform: scale(1.1);
                 box-shadow: 2px 2px 5px #c1c1c15e;
@@ -237,6 +239,7 @@ button:hover{
 }
 //-Other say 
 .other-say {
+    background: linear-gradient(#000,#eee);
     .header {
         h2 {
             font-family: $font-one;
@@ -253,7 +256,7 @@ button:hover{
     .carousel{
         .client {
             background-color: #ffffff10;
-            box-shadow: 2px 2px 5px #fff;
+            box-shadow: 0px 1px 15px #ffffff69;
             margin: 40px 20px 10px ;
             .client-img {
                 padding: 2rem;
@@ -275,9 +278,10 @@ button:hover{
 }
 //-contact
 .contact {
-    background: linear-gradient(#000,#eee);
+    background-color: rgb(237, 237, 237);
+    color: black;
     .subscribe {
-        padding: 8em 0;
+        padding: 6em 0;
         margin:auto;
         .title {
             h4 {
@@ -291,7 +295,7 @@ button:hover{
                 input {
                     width: 400px;
                     padding: 1.5em 1em;
-                    border: 1px solid #eee;
+                    border: 1px solid rgba(0, 0, 0, 0.513);
                     background: transparent;
                     color: black;
                     font-weight: bold;
@@ -301,18 +305,41 @@ button:hover{
             .btn-submit{
                 button {
                     background: whitesmoke;
-                    color: #000;
+                    color: rgba(0, 0, 0, 0.747);
                     padding:1em 1.5em;
-                    border-color: white;
+                    border-color: rgba(0, 0, 0, 0.534);
                     font-family: $font-one;
                     font-size: 15px;
-
                 }
             }
         }
     }
 }
-
+//-footer
+.footer{
+    padding: 10px 0;
+    background-color: rgb(237, 237, 237);
+    .social{
+        i {
+            color: black;
+            margin: 10px 15px;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    .copyright {
+        p {
+            color: black;
+            font-family: $font-tow;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        span {
+            color: $color-one;
+        }
+    }
+}
 @import "scss/fotter";
 @import "scss/animation";
 @import "scss/media";
