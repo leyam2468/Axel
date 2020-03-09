@@ -217,9 +217,12 @@ button:hover{
     .grid {
         .our-progect {
             margin-bottom: 25px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
             &:hover{
                 transform: scale(1.1);
-                box-shadow: 2px 2px 5px #c1c1c15e;
+                box-shadow: 5px 5px 10px #ffffff78;
             }
             .img img {
                 width: 100%;
@@ -229,6 +232,10 @@ button:hover{
             .title {
                 font-family:$font-tow;
                 font-size: 1.5em;
+                span {
+                    color: red;
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -290,7 +297,7 @@ button:hover{
         form {
             .textbox {
                 input {
-                    width: 300px;
+                    width: 350px;
                     padding: 1.5em 1em;
                     border: 1px solid rgba(0, 0, 0, 0.513);
                     background: transparent;

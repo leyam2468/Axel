@@ -1,6 +1,7 @@
-@media (max-width:575px){
+@media (max-width:760px){
     //-Banner
     .banner{
+        overflow: hidden;
         .swiper-container {
             .banner-cont {
                 position: absolute;
@@ -9,11 +10,20 @@
                 left: 10%;
                 h2 {
                     font-size: 3em;
+                    animation: none;
                 }
                 H3 {
-                    font-size: 1.4em;
+                    font-size: 1em;
+                    line-height: 2.5;
                 }
             }
+        }
+    }
+    //-about-me 
+    .about-me {
+        .about-img img {
+            display: block;
+            margin: auto;
         }
     }
     //-Portfolio
@@ -25,14 +35,47 @@
         }
         .button-group {
             button {
-                font-size: 1em;
+                font-size: .9em;
+                font-weight: bold;
             }
         }
     }
+    //-other say
     .other-say {
         .header {
             h2 {
-                font-size: 2em;
+                font-size: 1.5em;
+            }
+        }
+        .carousel {
+            .client {
+                text-align: center;
+                .about-client{
+                    padding: 0;
+                }
+            }
+        }
+    }
+    //-contact
+    .contact {
+        .subscribe {
+            form {
+                .textbox input {
+                    margin: auto;
+                }
+                .btn-submit {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    //-footer 
+    .footer {
+        .copyright {
+            p {
+                font-size: 1em;
             }
         }
     }
