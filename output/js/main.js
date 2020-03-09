@@ -119,7 +119,7 @@ $(document).ready(function(){
   });
 
 
-  //-Client Area
+//-Client Area
   $('.other-say .owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,

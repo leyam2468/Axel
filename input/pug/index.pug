@@ -37,68 +37,68 @@ html(lang="en")
                 .row
                     div(class="col-md-2 col-12 about-img")
                         img(src="img/me.png", alt="")
-                    div(class="col-md-8 col-12 about-info text-center")
+                    div(class="col-md-8 col-12 about-info text-center animatedParent")
                         h2 About Me
                         p Im A Full Stack Web Design im study Management Information System 'MIS' At Aboukir High institutes 
                         h3 Name: Mohamed Ahmed Mahmoud .
                         h3 Old: 21 Year
                         h3 From: Alexaindria
                         h3 Phone: 01023909759
-                        a(href="" class="cv") My CV
+                        a(href="" class="cv animated wobble delay-1500") My CV
                         a(href="" class="more-info") More Info
-                    div(class="col-md-2 col-12 d-none d-md-block about-img")
+                    div(class="col-md-2 col-12 d-none d-md-block about-img-2")
                         img(src="img/me2.png", alt="")
         //-programs lang
-        div(class="programs-lang ")
+        div(class="programs-lang")
             .container
                 .row
                     .col-md-6.icons.text-center
-                        .row
-                            .col-4.col-md-3
+                        div(class="row animatedParent " data-sequence='100')
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='1')
                                 i.devicon-html5-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='2')
                                 i.devicon-css3-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='3')
                                 i.devicon-javascript-plain.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='4')
                                 i.devicon-bootstrap-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='5')
                                 i.devicon-git-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='6')
                                 i.devicon-gulp-plain.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='7')
                                 i.devicon-sass-plain.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='8')
                                 i.devicon-github-plain-wordmark.wordmark
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='9')
                                 i.devicon-jquery-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='10')
                                 i.devicon-ubuntu-plain-wordmark.colored
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='11')
                                 i.devicon-wordpress-plain-wordmark
-                            .col-4.col-md-3
+                            div(class="col-4 col-md-3 animated bounceInDown" data-id='12')
                                 i.devicon-mysql-plain-wordmark.colored
                     
-                    .col-md-6.progres
-                                .progress
+                    div(class="col-md-6 progres animatedParent" data-sequence='100')
+                                div(class="progress animated fadeInDown" data-id='1')
                                     div(class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Html
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='2')
                                     div(class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") CSS
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='3')
                                     div(class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Js
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='4')
                                     div(class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Bootstrap
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='5')
                                     div(class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Sass
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='6')
                                     div(class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Pug
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='7')
                                     div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Gulp
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='8')
                                     div(class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Php
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='9')
                                     div(class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Sql
-                                .progress
+                                div(class="progress animated fadeInDown" data-id='10')
                                     div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Git
         //-Progect Area
         div(class="portfolio-area py-5 text-center" id="portfolio")
@@ -111,9 +111,9 @@ html(lang="en")
                     button(type="button" data-filter=".web-design") Web Design
                     button(type="button" data-filter=".future") Future
                     button(type="button" data-filter=".graphic") Graphic
-                .row.grid
+                div(class="row grid animatedParent")
                     .col-lg-4.col-md-6.col-sm-12.element-item.web-design
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p1.jpg")
                                     img(src="img/p1.jpg", alt="")
@@ -121,7 +121,7 @@ html(lang="en")
                                 h4.text-uppercase Test1
                                 span Web Design
                     .col-lg-4.col-md-6.col-sm-12.element-item.graphic
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p2.jpg")
                                     img(src="img/p2.jpg", alt="")
@@ -129,7 +129,7 @@ html(lang="en")
                                 h4.text-uppercase Test2
                                 span Graphic
                     .col-lg-4.col-md-6.col-sm-12.element-item.future
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p3.jpg")
                                     img(src="img/p3.jpg", alt="")
@@ -137,7 +137,7 @@ html(lang="en")
                                 h4.text-uppercase Test2
                                 span Future
                     .col-lg-4.col-md-6.col-sm-12.element-item.web-design.future
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p3.jpg")
                                     img(src="img/p3.jpg", alt="")
@@ -145,7 +145,7 @@ html(lang="en")
                                 h4.text-uppercase Test1
                                 span Future-Web Design
                     .col-lg-4.col-md-6.col-sm-12.element-item.graphic.web-design
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p2.jpg")
                                     img(src="img/p2.jpg", alt="")
@@ -153,7 +153,7 @@ html(lang="en")
                                 h4.text-uppercase Test2
                                 span Graphic-Web Design
                     .col-lg-4.col-md-6.col-sm-12.element-item.future.graphic
-                        .our-progect
+                        div(class="our-progect animated growIn")
                             .img
                                 a(class="popup-link" href="img/p1.jpg")
                                     img(src="img/p1.jpg", alt="")
