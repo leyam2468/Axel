@@ -1,4 +1,5 @@
-@media (max-width:575.98px){
+@media (max-width:575px){
+    //-Banner
     .banner{
         .swiper-container {
             .banner-cont {
@@ -12,6 +13,26 @@
                 H3 {
                     font-size: 1.4em;
                 }
+            }
+        }
+    }
+    //-Portfolio
+    .portfolio-area {
+        .progect-title{
+            h2 {
+                font-size: 2em;
+            }
+        }
+        .button-group {
+            button {
+                font-size: 1em;
+            }
+        }
+    }
+    .other-say {
+        .header {
+            h2 {
+                font-size: 2em;
             }
         }
     }

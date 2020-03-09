@@ -133,7 +133,7 @@ button:hover {
   .about-me .about-info a.cv {
     border: 1px solid rgba(255, 255, 255, 0.6); }
 
-.about-me .about-img img {
+.about-me .about-info .about-img img {
   height: 400px;
   display: flex;
   margin: 0 auto; }
@@ -214,7 +214,7 @@ button:hover {
     height: 2px;
     background-color: red; }
   .other-say .carousel .client {
-    background-color: #ffffff10;
+    background-color: transparent;
     box-shadow: 0px 1px 15px #ffffff69;
     margin: 40px 20px 10px; }
     .other-say .carousel .client .client-img {
@@ -238,7 +238,8 @@ button:hover {
     .contact .subscribe .title h4 {
       font-size: 3em;
       font-family: "lemon";
-      margin: 1em 0; }
+      margin: 1em 0;
+      text-shadow: 3px 3px 8px #670101; }
     .contact .subscribe form .textbox input {
       width: 400px;
       padding: 1.5em 1em;
@@ -246,14 +247,16 @@ button:hover {
       background: transparent;
       color: black;
       font-weight: bold;
-      font-family: "lemon"; }
+      font-family: "lemon";
+      box-shadow: 2px 2px 5px black; }
     .contact .subscribe form .btn-submit button {
       background: whitesmoke;
       color: rgba(0, 0, 0, 0.747);
       padding: 1em 1.5em;
       border-color: rgba(0, 0, 0, 0.534);
       font-family: "lemon";
-      font-size: 15px; }
+      font-size: 15px;
+      box-shadow: 2px 2px 5px black; }
 
 .footer {
   padding: 10px 0;
@@ -618,7 +621,7 @@ button:hover {
   100% {
     opacity: 0; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   .banner .swiper-container .banner-cont {
     position: absolute;
     z-index: 2;
@@ -627,6 +630,12 @@ button:hover {
     .banner .swiper-container .banner-cont h2 {
       font-size: 3em; }
     .banner .swiper-container .banner-cont H3 {
-      font-size: 1.4em; } }
+      font-size: 1.4em; }
+  .portfolio-area .progect-title h2 {
+    font-size: 2em; }
+  .portfolio-area .button-group button {
+    font-size: 1em; }
+  .other-say .header h2 {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */

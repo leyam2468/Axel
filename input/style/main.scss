@@ -95,7 +95,6 @@ button:hover{
 }
 //-About ME
 .about-me {
-    
     .about-info {
         h2 {
             font-size: 3em;
@@ -123,7 +122,6 @@ button:hover{
             font-family: $font-tow;
             font-size: 2em;
             font-weight: 500;
-
         }
         a {
             display: inline-block;
@@ -140,9 +138,6 @@ button:hover{
             }
             &.cv {
                 border:1px solid $color-tow ;
-                &:hover {
-                }
-            }
         }
     }
     .about-img {
@@ -151,6 +146,7 @@ button:hover{
             display: flex;
             margin: 0 auto;
         }
+    }
     }
 }
 //-programs lang 
@@ -255,7 +251,7 @@ button:hover{
     }
     .carousel{
         .client {
-            background-color: #ffffff10;
+            background-color:transparent;
             box-shadow: 0px 1px 15px #ffffff69;
             margin: 40px 20px 10px ;
             .client-img {
@@ -288,6 +284,7 @@ button:hover{
                 font-size: 3em;
                 font-family: $font-one;
                 margin: 1em 0;
+                text-shadow: 3px 3px 8px #670101;
             }
         }
         form {
@@ -300,6 +297,7 @@ button:hover{
                     color: black;
                     font-weight: bold;
                     font-family: $font-one;
+                    box-shadow: 2px 2px 5px black;
                 }
             }
             .btn-submit{
@@ -310,6 +308,7 @@ button:hover{
                     border-color: rgba(0, 0, 0, 0.534);
                     font-family: $font-one;
                     font-size: 15px;
+                    box-shadow: 2px 2px 5px black;
                 }
             }
         }

@@ -26,7 +26,6 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -97,24 +96,24 @@ var swiper2 = new Swiper('.swiper3', {
 //-portfolio
 $(document).ready(function(){
 
-  let $btns=$('.progect-area .button-group button');
+  let $btns=$('.portfolio-area .button-group button');
 
   $btns.click(function(e){
 
-    $('.progect-area .button-group button').removeClass('active');
+    $('.portfolio-area .button-group button').removeClass('active');
     e.target.classList.add('active');
 
     let selector = $(e.target).attr('data-filter');
-      $('.progect-area .grid').isotope ({
+      $('.portfolio-area .grid').isotope ({
         filter:selector
       });
 
     return false
   })
-  $('.progect-area .button-group #btn1').trigger('click');
+  $('.portfolio-area .button-group #btn1').trigger('click');
 
 
-  $('.progect-area .grid .our-progect .popup-link').magnificPopup({
+  $('.portfolio-area .grid .our-progect .popup-link').magnificPopup({
     type: 'image',
     gallery:{enabled:true}
   });
