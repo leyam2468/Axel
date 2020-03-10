@@ -101,16 +101,16 @@ html(lang="en")
                                 div(class="progress animated fadeInDown" data-id='10')
                                     div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Git
         //-Progect Area
-        div(class="portfolio-area py-5 text-center" id="portfolio")
+        div(class="portfolio-area py-5 text-center animatedParent " id="portfolio")
             .container
                 .progect-title.p-3
-                    h2.h1.text-uppercase My portfolio
+                    h2.h1.text-uppercase.animated.fadeIn My portfolio
                     span
-                .button-group.mb-4
-                    button(type="button" data-filter="*" class="active") All
-                    button(type="button" data-filter=".web-design") Web Design
-                    button(type="button" data-filter=".future") Future
-                    button(type="button" data-filter=".graphic") Graphic
+                .button-group.mb-4.animatedParent
+                    button(type="button" data-filter="*" class="active animated fadeInRightShort delay-500") All
+                    button(type="button" data-filter=".web-design" class="animated fadeInRightShort delay-500") Web Design
+                    button(type="button" data-filter=".future" class="animated fadeInRightShort delay-500") Future
+                    button(type="button" data-filter=".graphic" class="animated fadeInRightShort delay-500") Graphic
                 div(class="row grid animatedParent")
                     .col-lg-4.col-md-6.col-sm-12.element-item.web-design
                         div(class="our-progect animated growIn")
@@ -161,12 +161,12 @@ html(lang="en")
                                 h4.text-uppercase Test2
                                 span Future-Graphic
         //-what other say
-        div(class="other-say")
+        div(class="other-say animatedParent")
             .container
                 .row.text-center
                     .col-12
                         .header
-                            h2.text-uppercase Client Say about Me
+                            h2.text-uppercase.animated.growIn Client Say about Me
                             span
             .container.carousel.py-lg-5
                 .owl-carousel.owl-theme
@@ -195,11 +195,11 @@ html(lang="en")
                             h4 Axel4
                             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestias?
         //-contanct 
-        div(class="contact" id="contact")
+        div(class="contact animatedParent" id="contact")
             .container.subscribe
                 .row
                     .col-lg-12.title.text-center
-                        h4.text-uppercase Contact Me
+                        h4.text-uppercase.animated.growIn Contact Me
                 .d-sm-flex.justify-content-center
                     form
                         .row
