@@ -242,11 +242,63 @@ button:hover {
         font-family: "Dancing Script", cursive;
         font-size: 1.5rem; }
 
+.price-area {
+  overflow: hidden;
+  background-color: #ededed; }
+  .price-area .header-title {
+    color: black;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: "lemon";
+    text-shadow: 2px 2px 5px #8a8787; }
+  .price-area .header-underline {
+    display: block;
+    margin: 10px auto 25px;
+    width: 35%;
+    height: 3px;
+    background-color: #900600; }
+  .price-area .price {
+    background-color: black;
+    box-shadow: inset 0px 2px 5px #575050, 0px 2px 5px #575050; }
+    .price-area .price h2 {
+      font-weight: bold;
+      font-family: "Dancing Script", cursive; }
+    .price-area .price span {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      font-size: 3em;
+      border: 3px solid #900600;
+      border-radius: 50%;
+      padding: 20px;
+      font-weight: bold; }
+    .price-area .price ul {
+      list-style: none;
+      padding: 0; }
+      .price-area .price ul li {
+        padding: 5px 0;
+        font-weight: bold; }
+    .price-area .price button {
+      background-color: #900600;
+      color: white;
+      padding: 10px 40px;
+      font-weight: bold;
+      font-family: "lemon"; }
+    .price-area .price:nth-of-type(2) {
+      background-color: #900600;
+      transform: scale(1.1);
+      border-radius: 10px;
+      z-index: 2; }
+      .price-area .price:nth-of-type(2) span {
+        border: 3px solid white; }
+      .price-area .price:nth-of-type(2) button {
+        background-color: white;
+        color: black; }
+
 .contact {
   background-color: #ededed;
   color: black; }
   .contact .subscribe {
-    padding: 6em 0;
     margin: auto; }
     .contact .subscribe .title h4 {
       font-size: 3em;
@@ -694,6 +746,8 @@ button:hover {
     text-align: center; }
     .other-say .carousel .client .about-client {
       padding: 0; }
+      .other-say .carousel .client .about-client p {
+        color: black; }
   .contact .subscribe form .textbox input {
     margin: auto; }
   .contact .subscribe form .btn-submit button {

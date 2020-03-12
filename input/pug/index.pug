@@ -32,12 +32,12 @@ html(lang="en")
                 //-.swiper-button-next.swiper-button-white
                 //-.swiper-button-prev.swiper-button-white
         //-About Me 
-        div(class="about-me py-5" id="about-me")
+        div(class="about-me py-5 " id="about-me")
             .container
-                .row
-                    div(class="col-md-2 col-12 about-img")
+                .row.animatedParent
+                    div(class="col-md-2 col-12 about-img animated flipInY")
                         img(src="img/me.png", alt="")
-                    div(class="col-md-8 col-12 about-info text-center animatedParent")
+                    div(class="col-md-8 col-12 about-info text-center animated fadeIn delay-500")
                         h2 About Me
                         p Im A Full Stack Web Design im study Management Information System 'MIS' At Aboukir High institutes 
                         h3 Name: Mohamed Ahmed Mahmoud .
@@ -46,7 +46,7 @@ html(lang="en")
                         h3 Phone: 01023909759
                         a(href="" class="cv animated wobble delay-1500") My CV
                         a(href="" class="more-info") More Info
-                    div(class="col-md-2 col-12 d-none d-md-block about-img-2")
+                    div(class="col-md-2 col-12 d-none d-md-block about-img-2 animated flipInY")
                         img(src="img/me2.png", alt="")
         //-programs lang
         div(class="programs-lang")
@@ -101,9 +101,9 @@ html(lang="en")
                                 div(class="progress animated fadeInDown" data-id='10')
                                     div(class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100") Git
         //-Progect Area
-        div(class="portfolio-area py-5 text-center animatedParent " id="portfolio")
+        div(class="portfolio-area py-5 text-center " id="portfolio")
             .container
-                .progect-title.p-3
+                .progect-title.p-3.animatedParent
                     h2.h1.text-uppercase.animated.fadeIn My portfolio
                     span
                 .button-group.mb-4.animatedParent
@@ -194,9 +194,52 @@ html(lang="en")
                         .col-lg-8.col-md-12.about-client
                             h4 Axel4
                             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, molestias?
+                //-price-area
+        //-Price-Area
+        div(class="price-area py-3 text-center animatedParent")
+            h2.header-title.text-uppercase.animated.growIn our prices
+            span.header-underline
+            .container
+                .row.mt-5
+                    .price.col-md-4.p-3.animated.fadeInLeft
+                        .content
+                            h2.m-3 BASIC
+                            span $15
+                            ul.my-3
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                            button.btn.mt-3.mb-2 SELECT
+                    .price.col-md-4.p-3.animated.fadeIn
+                        .content
+                            h2.m-3 STANDERD
+                            span 35$
+                            ul.my-3
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                            button.btn.mt-3.mb-2 SELECT
+                    .price.col-md-4.p-3.animated.fadeInRight
+                        .content
+                            h2.m-3 PREMIUM
+                            span 55$
+                            ul.my-3
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                                li Lorem, ipsum dolor.
+                            button.btn.mt-3.mb-2 SELECT
         //-contanct 
         div(class="contact animatedParent" id="contact")
-            .container.subscribe
+            .container.subscribe.pt-5
                 .row
                     .col-lg-12.title.text-center
                         h4.text-uppercase.animated.growIn Contact Me
