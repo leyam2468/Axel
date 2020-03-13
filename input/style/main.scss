@@ -8,6 +8,7 @@ button:focus,
 button:active,
 button:hover{
     outline: 0;
+    box-shadow: none;
 }
 //--NavBar
 @import "scss/header";

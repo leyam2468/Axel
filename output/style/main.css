@@ -5,7 +5,9 @@ body {
 button:focus,
 button:active,
 button:hover {
-  outline: 0; }
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .navbar {
   padding: 0 1rem; }
@@ -79,6 +81,7 @@ button:hover {
     left: 45%;
     z-index: 2;
     cursor: pointer;
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     -webkit-animation: bounce-top 2s ease-in-out infinite both;
             animation: bounce-top 2s ease-in-out infinite both; }
@@ -90,7 +93,8 @@ button:hover {
   .banner .swiper-container .swiper-wrapper .swiper-slide {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 30vh 20vw; }
 
 .about-me .about-img-2 img {
@@ -139,6 +143,8 @@ button:hover {
 
 .about-me .about-info .about-img img {
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
 
@@ -150,9 +156,11 @@ button:hover {
     font-size: 5.5em;
     margin: 15px 0;
     display: inline-block;
+    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
     .programs-lang .icons i:hover {
-      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+              transform: scale(1.3);
       text-shadow: 1px 1px 20px #ffffffa6; }
 
 .programs-lang .progres {
@@ -170,7 +178,8 @@ button:hover {
       font-family: "Dancing Script", cursive;
       font-size: 1.3em;
       border-radius: 0 15px 15px 0;
-      box-shadow: 4px 0px 5px red; }
+      -webkit-box-shadow: 4px 0px 5px red;
+              box-shadow: 4px 0px 5px red; }
 
 .portfolio-area .progect-title h2 {
   font-family: "lemon";
@@ -194,6 +203,7 @@ button:hover {
 
 .portfolio-area .button-group .active {
   color: #900600;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
 
 .portfolio-area .grid .our-progect {
@@ -201,10 +211,13 @@ button:hover {
   background-color: white;
   color: black;
   border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out; }
   .portfolio-area .grid .our-progect:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 10px #ffffff78; }
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 5px 5px 10px #ffffff78;
+            box-shadow: 5px 5px 10px #ffffff78; }
   .portfolio-area .grid .our-progect .img img {
     width: 100%;
     height: 300px;
@@ -217,6 +230,7 @@ button:hover {
       font-size: 1em; }
 
 .other-say {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#eee));
   background: linear-gradient(#000, #eee); }
   .other-say .header h2 {
     font-family: "lemon";
@@ -228,7 +242,8 @@ button:hover {
     background-color: red; }
   .other-say .carousel .client {
     background-color: transparent;
-    box-shadow: 0px 1px 15px #ffffff69;
+    -webkit-box-shadow: 0px 1px 15px #ffffff69;
+            box-shadow: 0px 1px 15px #ffffff69;
     margin: 40px 20px 10px; }
     .other-say .carousel .client .client-img {
       padding: 2rem; }
@@ -259,7 +274,8 @@ button:hover {
     background-color: #900600; }
   .price-area .price {
     background-color: black;
-    box-shadow: inset 0px 2px 5px #575050, 0px 2px 5px #575050; }
+    -webkit-box-shadow: inset 0px 2px 5px #575050, 0px 2px 5px #575050;
+            box-shadow: inset 0px 2px 5px #575050, 0px 2px 5px #575050; }
     .price-area .price h2 {
       font-weight: bold;
       font-family: "Dancing Script", cursive; }
@@ -286,7 +302,8 @@ button:hover {
       font-family: "lemon"; }
     .price-area .price:nth-of-type(2) {
       background-color: #900600;
-      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
       border-radius: 10px;
       z-index: 2; }
       .price-area .price:nth-of-type(2) span {
@@ -313,7 +330,8 @@ button:hover {
       color: black;
       font-weight: bold;
       font-family: "lemon";
-      box-shadow: 2px 2px 5px black; }
+      -webkit-box-shadow: 2px 2px 5px black;
+              box-shadow: 2px 2px 5px black; }
     .contact .subscribe form .btn-submit button {
       background: whitesmoke;
       color: rgba(0, 0, 0, 0.747);
@@ -321,7 +339,8 @@ button:hover {
       border-color: rgba(0, 0, 0, 0.534);
       font-family: "lemon";
       font-size: 15px;
-      box-shadow: 2px 2px 5px black; }
+      -webkit-box-shadow: 2px 2px 5px black;
+              box-shadow: 2px 2px 5px black; }
 
 .footer {
   padding: 10px 0;
@@ -358,46 +377,58 @@ button:hover {
  */
 @-webkit-keyframes heartbeat {
   from {
+    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   10% {
+    -webkit-transform: scale(0.91);
     transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   17% {
+    -webkit-transform: scale(0.98);
     transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   33% {
+    -webkit-transform: scale(0.87);
     transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   45% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
 @keyframes heartbeat {
   from {
+    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   10% {
+    -webkit-transform: scale(0.91);
     transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   17% {
+    -webkit-transform: scale(0.98);
     transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   33% {
+    -webkit-transform: scale(0.87);
     transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   45% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
@@ -415,6 +446,7 @@ button:hover {
  */
 @-webkit-keyframes bounce-top {
   0% {
+    -webkit-transform: translateY(-45px);
     transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -422,18 +454,22 @@ button:hover {
   24% {
     opacity: 1; }
   40% {
+    -webkit-transform: translateY(-24px);
     transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   65% {
+    -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   82% {
+    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   93% {
+    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
@@ -441,10 +477,12 @@ button:hover {
   55%,
   75%,
   87% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
@@ -452,6 +490,7 @@ button:hover {
 
 @keyframes bounce-top {
   0% {
+    -webkit-transform: translateY(-45px);
     transform: translateY(-45px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -459,18 +498,22 @@ button:hover {
   24% {
     opacity: 1; }
   40% {
+    -webkit-transform: translateY(-24px);
     transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   65% {
+    -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   82% {
+    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   93% {
+    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
@@ -478,10 +521,12 @@ button:hover {
   55%,
   75%,
   87% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   100% {
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
@@ -703,17 +748,21 @@ button:hover {
 
 @-webkit-keyframes slide-in-bottom {
   0% {
+    -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0; }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
 
 @keyframes slide-in-bottom {
   0% {
+    -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
     opacity: 0; }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
 

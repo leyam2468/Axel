@@ -13,7 +13,7 @@ gulp.task('html',function(){
         .pipe(gulp.dest('output'))
 });
 
-// css Tast
+// css Tastgulp-sourcemaps
 gulp.task('css',function(){
     return gulp.src('input/style/*.scss')
         .pipe(sourcemap.init())
